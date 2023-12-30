@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header {
+    @apply text-center text-3xl font-semibold mb-8 text-mainColor;
+  }
+  .form {
+    @apply flex flex-col gap-4 w-full md:w-1/2 mx-auto;
+  }
+  .input {
+    @apply p-2 rounded-sm focus:outline-none text-black focus:border-[1px] focus:border-mainColor;
+  }
+  .btn {
+    @apply px-4 py-3 text-xl bg-mainColor border-2 border-mainColor rounded-md hover:bg-transparent transition;
+  }
+  .err {
+    @apply text-red-700;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #18181b;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #db1a5a;
+  border-radius: 10px;
+}
